@@ -1,9 +1,35 @@
 <html>
     <head>
-        <link rel="stylesheet" src="hello.css">
     </head>
+    <style>
+:root{
+    --coler1 :#000000;
+    --coler2 :#ffffff;
+}
+h1{
+    text-align: center;
+}
+#startscript{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--coler1);
+    color: var(--coler2);
+    width: 95%;
+    height: 20px;
+}
+    </style>
+    <script>
+      function getTabId() { ... }
+
+        chrome.scripting
+            .executeScript({
+                 target : {tabId : getTabId()},
+                 files : [ "script.js" ],
+             })
+        .then(() => console.log("injected script file"));
+    </script>
   <body>
     <h1>Press the button below to activated the extension.</h1>
-    <button id="startscript">Start script</button>
+    <button id="startscript">Start extension</button>
   </body>
 </html>
