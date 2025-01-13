@@ -2,6 +2,26 @@
     --coler1 :#000000;
     --coler2 :#ffffff;
 }
+body{
+    background-color: var(--coler2);
+    height: 200px;
+    width: 400px;
+}
 h1{
     text-align: center;
+    color: var(--coler1);
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    left: -30;
+    transform: translateX(30%);
+}
+h2{
+    text-align: center;
+    color: var(--coler1);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    left: 50%;
+    transform: translateX(-50%);
 }
