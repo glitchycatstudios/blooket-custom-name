@@ -1,20 +1,11 @@
-function getTabId(callback) {
-  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-      var tab = tabs[0];
-      callback(tab.id);
-  });
-}
-
-getTabId(function(tabId) {
-  fetch(chrome.runtime.getURL('script.js'))
-      .then(response => response.text())
-      .then(scriptContent => {
-          chrome.scripting.executeScript({
-              target: { tabId: tabId },
-              func: (script) => {
-                  eval(script);
-              },
-              args: [scriptContent]
-          }).then(() => console.log("Injected script content into the console"));
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.action.onClicked.addListener((tab) => {
+    if (tab.url && !tab.url.startsWith('chrome://')) {
+      chrome.runtime.sendNativeMessage('com.example.myapp', { text: "Hello" }, (response) => {
+        console.log("Received response:", response);
       });
+    } else {
+      console.error("Cannot access a chrome:// URL");
+    }
+  });
 });
