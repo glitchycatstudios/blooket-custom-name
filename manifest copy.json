@@ -1,0 +1,15 @@
+{
+  "manifest_version" : 3,
+  "name" : "Calculator",
+  "version" : "1.0",
+  "description" : "Calculate Anywhere",
+  "action" : {
+      "default_icon" : "hello_extensions.png",
+      "default_popup" : "popup.html"
+  },
+
+"content_security_policy": {
+  "extension_pages": "script-src: 'self' 'unsafe-inline'"
+
+}
+}

@@ -1,11 +1,13 @@
 {
-    "name": "Blooket custom name fixer",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "manifest_version": 3,
-    "permissions": ["scripting", "activeTab"],
-    "action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
-    }
+  "manifest_version": 3,
+  "name": "Calculator",
+  "version": "1.0",
+  "description": "Calculate Anywhere",
+  "action": {
+    "default_icon": "hello_extensions.png",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'sha256-uWRgIaHvKM5DSuXq39S1DLL7hMD4turAnY4Lqs2NVZs='; object-src 'none';"
   }
+}
