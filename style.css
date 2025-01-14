@@ -1,16 +1,18 @@
 :root{
     --coler1 :#000000;
-    --coler2 :#ffffff;
-    --coler3 :#ff0000;
+    --coler2 :#5dade2;
+    --coler3 :#2e88c4;
 }
 
 body{
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--coler2);
 }
 
 button{
@@ -20,22 +22,27 @@ button{
     border: none;
     background-color: var(--coler3);
 }
-
-h1{
+.text1{
     text-align: center;
     color: var(--coler1);
-    position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
-    left: -30;
-    transform: translateX(30%);
+    font-size: 20px;
 }
 h2{
     text-align: center;
     color: var(--coler1);
+    font-size: 18px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0px;
+    left: 0px;
+}
+.logoname{
+    color: var(--coler1);
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 55px;
 }
