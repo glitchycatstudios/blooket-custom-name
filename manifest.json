@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "B-Namer",
+  "name": "Blooket Name Hacker",
   "version": "1.0",
   "description": "Choose your own name when random names is on in blooket.",
   "action": {
-    "default_icon": "hello_extensions.png",
+    "default_icon": "lbe.png",
     "default_popup": "popup.html"
   },
   "permissions": [
