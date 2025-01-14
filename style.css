@@ -1,12 +1,26 @@
 :root{
     --coler1 :#000000;
     --coler2 :#ffffff;
+    --coler3 :#ff0000;
 }
+
 body{
-    background-color: var(--coler2);
-    height: 200px;
-    width: 400px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--coler3);
+}
+
 h1{
     text-align: center;
     color: var(--coler1);

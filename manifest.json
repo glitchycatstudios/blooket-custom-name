@@ -7,15 +7,12 @@
     "default_icon": "hello_extensions.png",
     "default_popup": "popup.html"
   },
-  "background": {
-    "service_worker": "runscript.js"
-  },
   "permissions": [
     "scripting",
     "activeTab",
-    "nativeMessaging"
+    "clipboardWrite"
   ],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'none';"
-  }
+  } 
 }
