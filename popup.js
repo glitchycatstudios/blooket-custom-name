@@ -1,5 +1,5 @@
-document.getElementById('copyButton1').addEventListener('click', () => {
-  fetch(chrome.runtime.getURL('codeToCopy1.js'))
+document.getElementById('allowpast').addEventListener('click', () => {
+  fetch(chrome.runtime.getURL('allowpastcopy.js'))
     .then(response => response.text())
     .then(textToCopy => {
       navigator.clipboard.writeText(textToCopy).then(() => {
@@ -13,8 +13,8 @@ document.getElementById('copyButton1').addEventListener('click', () => {
     });
 });
 
-document.getElementById('copyButton2').addEventListener('click', () => {
-  fetch(chrome.runtime.getURL('codeToCopy2.js'))
+document.getElementById('costumname').addEventListener('click', () => {
+  fetch(chrome.runtime.getURL('costumnamecopy.js'))
     .then(response => response.text())
     .then(textToCopy => {
       navigator.clipboard.writeText(textToCopy).then(() => {

@@ -1,15 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Blooket Name Hacker",
+  "name": "Blooket Hacker",
   "version": "1.0",
-  "description": "Choose your own name when random names is on in blooket.",
+  "description": "Get hacks in Blooket.",
   "action": {
     "default_icon": "lbe.png",
     "default_popup": "popup.html"
   },
   "permissions": [
-    "scripting",
-    "activeTab",
     "clipboardWrite"
   ],
   "content_security_policy": {
